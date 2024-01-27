@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ccc;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.apply_box {
+	max-width: 500px;
+	background-color: white;
+	margin: 0 auto;
+	padding: 15px;
+	margin-top: 40px;
+	box-shadow: 3px 2px 4px rgba(1, 1, 1, 0.2);
+	border-radius: 10px;
+}
+
+.form_container {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(200px, 1fr)
+	); /* Adjust the minmax values as needed */
+	grid-gap: 20px;
+}
+.form_control {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+select,
+input,
+textarea {
+	padding: 6px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 15px;
+	color: black;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline-color: red;
+}
+
+.button_container {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+
+button {
+	background-color: red;
+	border: transparent solid 2px;
+	padding: 5px 10px;
+	border-radius: 8px;
+	color: white;
+	transition: 0.3s ease-in;
+}
+
+button:hover {
+	background-color: #ccc;
+	border: 2px solid red;
+	color: black;
+	transition: 0.3s ease-out;
+	cursor: pointer;
+}
+
+.textarea_control {
+	grid-column: 1 / span 2;
+	// 2 grid ki jagah cover karata h
+}
+
+.textarea_control textarea {
+	width: 100%;
+}
+
+@media (max-width: 460px) {
+	.textarea_control {
+		grid-column: 1 / span 1;
+	}
+}
