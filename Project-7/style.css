@@ -109,3 +109,45 @@ main {
 	min-height: 100vh;
 	background: rgb(240, 238, 238);
 }
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+}
+.card {
+	max-width: 256px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.card h3 {
+	font-size: 15px;
+}
+.image img {
+	width: 236px;
+	height: 124px;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+}
+.avatar img {
+	width: 25px;
+	height: 25px;
+}
+.card-content {
+	display: flex;
+	gap: 5px;
+	justify-content: space-between;
+}
+.another {
+	display: flex;
+}
+.channel-name {
+	font-size: 8px;
+	font-weight: bold;
+}
+.content-status {
+	display: flex;
+	font-size: 6px;
+	gap: 5px;
+}
